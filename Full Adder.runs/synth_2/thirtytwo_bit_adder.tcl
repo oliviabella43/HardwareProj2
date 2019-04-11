@@ -40,9 +40,6 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/olivi/OneDrive/Documents/Undergrad/Senior/Spring 2019/COEN 4710 - Computer Hardware/Full Adder/Full Adder.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/olivi/OneDrive/Documents/Undergrad/Senior/Spring 2019/COEN 4710 - Computer Hardware/Full Adder/Full Adder.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc}}]
-
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
