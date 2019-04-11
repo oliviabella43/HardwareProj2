@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr 10 18:48:56 2019
+# Process ID: 25364
+# Current directory: C:/Users/olivi/OneDrive/Documents/Undergrad/Senior/Spring 2019/COEN 4710 - Computer Hardware/Full Adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23276 C:\Users\olivi\OneDrive\Documents\Undergrad\Senior\Spring 2019\COEN 4710 - Computer Hardware\Full Adder\Full Adder.xpr
+# Log file: C:/Users/olivi/OneDrive/Documents/Undergrad/Senior/Spring 2019/COEN 4710 - Computer Hardware/Full Adder/vivado.log
+# Journal file: C:/Users/olivi/OneDrive/Documents/Undergrad/Senior/Spring 2019/COEN 4710 - Computer Hardware/Full Adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/olivi/OneDrive/Documents/Undergrad/Senior/Spring 2019/COEN 4710 - Computer Hardware/Full Adder/Full Adder.xpr}
+update_compile_order -fileset sources_1
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_2]
+set_property part xc7a35tcpg236-1 [current_project]
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+add_files -fileset constrs_1 -norecurse {{C:/Users/olivi/OneDrive/Documents/Undergrad/Senior/Spring 2019/COEN 4710 - Computer Hardware/Adder/Adder.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc}}
+import_files -fileset constrs_1 {{C:/Users/olivi/OneDrive/Documents/Undergrad/Senior/Spring 2019/COEN 4710 - Computer Hardware/Adder/Adder.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc}}
+reset_run synth_2
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+open_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
