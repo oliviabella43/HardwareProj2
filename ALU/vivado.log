@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr 14 12:52:22 2019
+# Process ID: 8140
+# Current directory: C:/Users/Kevin/Desktop/HardwareGit/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4296 C:\Users\Kevin\Desktop\HardwareGit\ALU\ALU.xpr
+# Log file: C:/Users/Kevin/Desktop/HardwareGit/ALU/vivado.log
+# Journal file: C:/Users/Kevin/Desktop/HardwareGit/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/3InMux.vhd w ]
+add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/3InMux.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/full_adder.vhd w ]
+add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/full_adder.vhd
+close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/two_in_mux.vhd w ]
+add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/two_in_mux.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/three_in_mux.v w ]
+add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/three_in_mux.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/three_in_mux.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/three_in_mux.v
+close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/three_in_mux.vhd w ]
+add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/three_in_mux.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/2BitALU.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/2BitALU.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/2InMux.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/2InMux.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/3InMux.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/3InMux.vhd
+close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/full_alu.vhd w ]
+add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/full_alu.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/alu.vhd w ]
+add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/alu.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 14 13:33:24 2019...
