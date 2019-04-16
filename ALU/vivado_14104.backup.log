@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr 15 20:52:31 2019
+# Process ID: 14104
+# Current directory: C:/Users/Kevin/Desktop/HardwareProj2/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12768 C:\Users\Kevin\Desktop\HardwareProj2\ALU\ALU.xpr
+# Log file: C:/Users/Kevin/Desktop/HardwareProj2/ALU/vivado.log
+# Journal file: C:/Users/Kevin/Desktop/HardwareProj2/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Kevin/Desktop/HardwareGit/ALU' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 679.105 ; gain = 97.992
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ControlUnit.vhd w ]
+add_files C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ControlUnit.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ControlUnit.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ControlUnit.vhd
+close [ open C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ControlUnit.vhd w ]
+add_files C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ControlUnit.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ALUOp.vhd w ]
+add_files C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ALUOp.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 15 22:11:36 2019...

@@ -39,12 +39,25 @@ end ControlUnit;
 architecture Behavioral of ControlUnit is
 
 begin
-    
+    --Uses funct not op code, op code for these is '000000' for R type
     with INSTRU select ALUOp <=
         "010" when "100000", --add
         "110" when "100010", --sub
         "000" when "100100", --and
         "001" when "100101", --or
         "111" when "101010"; --slt
-
+        
+     --lw '100011'=35 op Itype
+     --sw '1010011'=43 op Itype
+     --addi '001000'=8 op Itype
+     --beq '000100'=4 op Itype
+     --lui '001111'=15 op Itype
+     --ori '001101'=13 op Itype
+     --sll '000000'=0 funct and 0 op Rtype, uses shift amount
+     --srl '000010'=2 funct and 0 op Rtype, uses shift amount
+     --jr  '001000'=8 funct and 0 op Rtype, uses PC-R(rs)
+     --jal '000011'=3 op Jtype, R[31]=PC+8;PC=JumpAddr
+     
+     
+     
 end Behavioral;
