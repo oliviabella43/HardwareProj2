@@ -2,43 +2,27 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Apr 14 12:52:22 2019
-# Process ID: 8140
-# Current directory: C:/Users/Kevin/Desktop/HardwareGit/ALU
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4296 C:\Users\Kevin\Desktop\HardwareGit\ALU\ALU.xpr
-# Log file: C:/Users/Kevin/Desktop/HardwareGit/ALU/vivado.log
-# Journal file: C:/Users/Kevin/Desktop/HardwareGit/ALU\vivado.jou
+# Start of session at: Mon Apr 15 20:52:31 2019
+# Process ID: 14104
+# Current directory: C:/Users/Kevin/Desktop/HardwareProj2/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12768 C:\Users\Kevin\Desktop\HardwareProj2\ALU\ALU.xpr
+# Log file: C:/Users/Kevin/Desktop/HardwareProj2/ALU/vivado.log
+# Journal file: C:/Users/Kevin/Desktop/HardwareProj2/ALU\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.xpr
+open_project C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.xpr
 update_compile_order -fileset sources_1
-close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/3InMux.vhd w ]
-add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/3InMux.vhd
 update_compile_order -fileset sources_1
-close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/full_adder.vhd w ]
-add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/full_adder.vhd
-close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/two_in_mux.vhd w ]
-add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/two_in_mux.vhd
+close [ open C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ControlUnit.vhd w ]
+add_files C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ControlUnit.vhd
 update_compile_order -fileset sources_1
-close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/three_in_mux.v w ]
-add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/three_in_mux.v
+export_ip_user_files -of_objects  [get_files C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ControlUnit.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ControlUnit.vhd
+close [ open C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ControlUnit.vhd w ]
+add_files C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ControlUnit.vhd
 update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/three_in_mux.v] -no_script -reset -force -quiet
-remove_files  C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/three_in_mux.v
-close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/three_in_mux.vhd w ]
-add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/three_in_mux.vhd
-update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/2BitALU.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/2BitALU.vhd
-export_ip_user_files -of_objects  [get_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/2InMux.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/2InMux.vhd
-export_ip_user_files -of_objects  [get_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/3InMux.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/3InMux.vhd
-close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/full_alu.vhd w ]
-add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/full_alu.vhd
-update_compile_order -fileset sources_1
-close [ open C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/alu.vhd w ]
-add_files C:/Users/Kevin/Desktop/HardwareGit/ALU/ALU.srcs/sources_1/new/alu.vhd
+close [ open C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ALUOp.vhd w ]
+add_files C:/Users/Kevin/Desktop/HardwareProj2/ALU/ALU.srcs/sources_1/new/ALUOp.vhd
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1

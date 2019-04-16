@@ -36,16 +36,10 @@ architecture Behavioral of three_in_mux is
 
 begin
     
-    if(SEL='00') then 
-        X<=A
-    elsif (SEL='01') then 
-        X<=B
-    elsif (SEL='10') then 
-        X<=C;
-    end if;
-    
-    X <= A when (SEL='00') elsif
-    X <= B when (SEL='01') elsif
-    X <= C when (SEL='10');
+    with SEL select X <=
+        A when "00",
+        B when "01",
+        C when "10",
+        C when "11";
 
 end Behavioral;
