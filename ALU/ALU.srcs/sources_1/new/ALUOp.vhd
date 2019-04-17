@@ -25,9 +25,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity ALUOp is
   Port ( 
-        OPC: in std_logic_vector(2 downto 0);
-        ALUOP: out std_logic_vector(1 downto 0);
-        Funct1: out std_logic  
+        aluop: in std_logic_vector(1 downto 0);
+        funct: in std_logic_vector(5 downto 0);
+        Ainv: out std_logic;
+        Binv: out std_logic;
+        AOp: out std_logic_vector(1 downto 0) 
         );
 end ALUOp;
 
@@ -35,16 +37,26 @@ architecture Behavioral of ALUOp is
 
 begin
     
-    with OPC select ALUOP <=
-        "00" when "000", --and
-        "01" when "001", --or
-        "10" when "010", --and
-        "11" when others; --sub and slt
+    with aluop select AOp <=
+        "00" when "00", 
+        "01" when "01", 
+        "10" when "10", --Rtype instructions
+        "11" when "11";
         
-    with OPC select Fucnt1 <=
-        "0" when "000", --and
-        "0" when "001", --or
-        "0" when "010", --and
-        "1" when others; --sub and slt
+    with funct select Binv <=
+        '0' when "100000", --and
+        '1' when "100010", --sub
+        '0' when "100100", --and
+        '0' when "100101", --or
+        '1' when "101010"; --slt
+        
+    with funct select Ainv <= --Do not need Ainv for any current functionality
+        '0' when others;
+        
+     --add '100000'=32 funct Rtype
+     --sub '100010'=34 funct Rtype
+     --and '100100'=40 funct Rtype
+     --or  '100101'=35 funct Rtype
+     --slt '101010'=42 funct Rtype 
         
 end Behavioral;

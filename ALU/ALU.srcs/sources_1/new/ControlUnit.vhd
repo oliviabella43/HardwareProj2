@@ -29,7 +29,7 @@ entity ControlUnit is
         branch: out std_logic;
         MemRead: out std_logic;
         MemtoReg: out std_logic;
-        ALUOp: out std_logic_vector(2 downto 0);
+        ALUOp: out std_logic_vector(1 downto 0);
         MemWrite: out std_logic;
         ALUsrc: out std_logic;
         RegWrite: out std_logic        
@@ -39,14 +39,17 @@ end ControlUnit;
 architecture Behavioral of ControlUnit is
 
 begin
-    --Uses funct not op code, op code for these is '000000' for R type
+
     with INSTRU select ALUOp <=
-        "010" when "100000", --add
-        "110" when "100010", --sub
-        "000" when "100100", --and
-        "001" when "100101", --or
-        "111" when "101010"; --slt
+        "10" when "000000"; --Rtype Instructions       
         
+        
+        
+     --add '100000'=32 funct Rtype
+     --sub '100010'=34 funct Rtype
+     --and '100100'=40 funct Rtype
+     --or  '100101'=35 funct Rtype
+     --slt '101010'=42 funct Rtype   
      --lw '100011'=35 op Itype
      --sw '1010011'=43 op Itype
      --addi '001000'=8 op Itype

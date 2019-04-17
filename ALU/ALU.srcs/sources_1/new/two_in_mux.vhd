@@ -28,7 +28,7 @@ entity two_in_mux is
         SEL : in std_logic;
         A : in std_logic;
         B : in std_logic;
-        X : out std_logic
+        C : out std_logic
         );
 end two_in_mux;
 
@@ -36,6 +36,6 @@ architecture Behavioral of two_in_mux is
 
 begin
     
-    X <= A when (SEL='0') else B;
+    C <= (A AND NOT SEL) OR (B AND SEL);
 
 end Behavioral;
